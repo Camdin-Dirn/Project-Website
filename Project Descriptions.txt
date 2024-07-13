@@ -1,0 +1,224 @@
+Glazing Guru
+
+Overview
+Problem Statement:
+My father owns two glass companies in Missoula, MT, where I worked as an installer during the summers of 2022 and 2023. Throughout my time on various jobs, ranging from commercial to residential projects and even minor repair work around Missoula, a consistent issue emerged: poor communication. To address this, I decided to develop an app to bridge this communication gap.
+
+Solution
+GlazingGuru Pro is the solution designed to address this communication challenge. Built by an installer for installers, GlazingGuru leverages my domain knowledge to improve communication across all levels of a glass installation project. Here’s how it works:
+
+Project Management by Estimators:
+
+Estimators can add new projects when they go out to make estimates.
+They can upload photos of each window (both interior and exterior), add detailed notes on each window, and provide general notes about the house and its occupants.
+Essential contact details such as the customer's phone number, name, and address can be included.
+
+Preparation for Installers:
+
+Before heading to a job site, installers can review all the details and photos uploaded by the estimator.
+This pre-visit information allows installers to prepare adequately, ensuring they have the necessary materials and tools, thus reducing unnecessary prep time on-site and minimizing extra trips back to the shop.
+By facilitating better communication and preparation, GlazingGuru Pro enhances overall efficiency and quality of work.
+
+Skills Developed
+React Native: Building a cross-platform mobile application.
+Mobile Development: Developing a user-friendly and functional mobile app.
+Stakeholder Engagement: Collaborating with various stakeholders, including estimators, installers, and company owners, to understand and address their needs.
+JavaScript: Using JavaScript for app development and functionality.
+
+Next Steps
+GlazingGuru Pro is currently in the beta phase. Future plans include:
+
+Subscription Model for Companies: Allowing company owners to subscribe and have all their projects stored and managed within the app.
+Continuous Improvement: Working closely with my father and his employees to gather feedback and continually enhance GlazingGuru’s functionality and user experience.
+
+
+
+NFL Play Calling
+
+Overview
+Problem Statement:
+My classmates and I set out to investigate the predictability of NFL play calling based on pre-snap factors. Our goal was to determine which factors most significantly influenced play calling and to identify if certain teams were more predictable than others. To achieve this, we utilized the NFLpy package in Python to gather extensive play-by-play data.
+
+Solution
+To address our problem, we developed a series of Random Forest models using the Scikit-learn library in Python. These models took various pre-snap variables as input and aimed to predict the type of play that would be called. The primary variables we focused on included:
+
+Time left in the half
+Score
+Down
+Distance to the first down
+Additionally, we created models specific to individual teams to see if predictability varied from team to team. Our models demonstrated an approximate 70% accuracy in predicting the next play type based on these situational pre-snap variables. This level of accuracy suggests that if an NFL team were to utilize our model, they could reliably anticipate the opponent's play type 70% of the time, allowing them to optimize their defensive strategy accordingly.
+
+Skills Developed
+Machine Learning: Implementing and refining predictive models.
+Classification Modeling: Classifying play types based on pre-snap variables.
+Decision Trees and Random Forests: Using these techniques to improve model accuracy.
+Python Programming: Utilizing Python for data processing and model building.
+Matplotlib: Visualizing data and model results.
+Scikit-learn: Leveraging this library for machine learning tasks.
+
+Next Steps
+To enhance our project, we plan to:
+
+Explore Serving Options: Develop a public dashboard to display our findings and allow users to interact with the data and models.
+Incorporate More Data: Expand our dataset to include college, high school, and historical NFL data to improve model robustness.
+Refine Play Types: Increase the granularity of play type predictions, such as distinguishing between long passes, outside runs, etc., to provide more detailed insights.
+
+Real Estate
+Overview
+Problem Statement:
+During our final semester of undergraduate studies, my classmates and I aimed to create a tool to help us navigate the housing market as we prepared to start our careers and lives post-college. We wanted a dashboard that would provide insights into the best course of action regarding housing options.
+
+Solution
+To address this need, we developed a comprehensive housing market dashboard. Here’s how we did it:
+
+Data Collection:
+
+We scraped real estate data for properties that were for sale, sold, and for rent in Salem using RapidAPI.
+This data collection process was executed within a Docker container to ensure consistency and manageability.
+Data Storage:
+
+The scraped data was live-dumped into a PostgreSQL database hosted by Railway, ensuring real-time updates and reliable data storage.
+Data Visualization:
+
+We connected the PostgreSQL database to a Power BI report, enabling us to create an interactive and user-friendly dashboard.
+The dashboard displays various housing options and their costs, allowing users to filter based on features they desire and easily find available properties in Salem.
+This dashboard helps users, including ourselves, to make informed decisions about renting or buying homes in Salem based on up-to-date market data.
+
+Skills Developed
+Power BI: Creating dynamic reports and visualizations.
+PostgreSQL: Managing and querying a relational database.
+ETL (Extract, Transform, Load): Developing efficient data pipelines for real-time data processing.
+Database Design: Structuring databases to support efficient data storage and retrieval.
+Data Engineering: Building a robust system for data collection, storage, and visualization.
+
+Next Steps
+To enhance the utility of our dashboard, we plan to:
+
+Expand Data Coverage: Extend our data scraping and analysis to include the entire state of Oregon, providing a broader range of housing market insights.
+Refine Features: Continuously improve the dashboard’s features and usability based on user feedback and emerging data trends.
+
+
+UFC
+
+Overview:
+
+Problem Statement:
+In our research, we aimed to predict the outcomes of UFC fights based on fighter statistics. The dataset we chose includes UFC fights and fighter statistics from 1993 to 2021. Each observation in the dataset represents a fight, including individual fighter stats, totaling 6012 observations with 155 variables. Our primary scientific question was: "Which fighter variables predict wins?" To answer this, we split our dataset into two subsets: infight data and career data.
+
+Solution:
+We conducted classification analysis and linear regression to draw conclusions from our data. For infight predictions, we used binomial logistic regression with explanatory variables such as differences in height, weight, age, strike percentage, headshot percentage, and bodyshot percentage between fighters. We found that the difference in strike percentage was significant at an alpha level of 0.05, with an AIC of 15904. However, the model's error rate was 0.316, indicating poor predictive power.
+
+For the career dataset, we used linear regression to find relationships between win ratio (number of wins over number of fights) and explanatory variables like proportion of strikes, headshots, body shots, weight, height, reach, and age. The linear regressions had significant p-values, but the R-squared values were low (0.0025-0.047), indicating weak relationships. Multiple linear regression, including categorical variables like weight class and stance, improved the adjusted R-squared to 0.097, but this was still not sufficient for strong predictions.
+
+Skills:
+
+Classification Analysis
+Logistic Regression
+Linear Regression
+Multiple Linear Regression
+Data Analysis
+Statistical Modeling
+
+Next Steps:
+We identified several areas for improvement in future studies:
+
+Separate analysis by weight class and gender to see if predictive factors differ.
+Incorporate more complex variables, such as the significance of title fights.
+Collaborate with someone knowledgeable about UFC to better understand the dataset and variables.
+Explore more sophisticated modeling techniques to improve predictive power.
+
+
+
+BracketBuddies
+
+Overview:
+
+Problem Statement:
+
+Solution:
+
+Skills:
+
+Next Steps:
+
+
+March Madness Visualization 
+
+Overview:
+
+Problem Statement:
+
+Solution:
+
+Skills:
+
+Next Steps:
+
+Soccerary
+
+Overview
+Soccerary is a comprehensive platform for all soccer enthusiasts. The homepage displays current live matches, and users can access information on all leagues and competitions worldwide, including club and international teams. This platform was developed using an API from RapidAPI, along with HTML, JavaScript, and CSS.
+
+Problem Statement
+As a huge soccer fan in America, I found there was no single platform where one could view all soccer matches from around the world in one place. This gap in the market inspired me to create Soccerary, an all-in-one solution for soccer fans.
+
+Solution
+To solve this problem, Soccerary was developed with the following features:
+
+Live Match Updates: The homepage showcases all live matches happening at any given moment.
+Comprehensive Coverage: Users can find information on every league and competition, both club and international, from all over the world.
+User-Friendly Interface: The platform is built using HTML, JavaScript, and CSS, ensuring a smooth and interactive user experience.
+
+Skills Developed
+API Integration: Utilizing RapidAPI to fetch and display soccer match data.
+Web Development: Building the platform using HTML, JavaScript, and CSS.
+User Experience Design: Creating an intuitive and user-friendly interface for soccer fans.
+
+Next Steps
+To further improve Soccerary, the following steps are planned:
+
+Professional Website Design: Enhance the website’s design for a more professional look and feel.
+In-Depth Statistics: Provide more detailed statistics and analytics for matches and players.
+Official Links: Include links to official league websites and other relevant resources.
+
+
+Stars With Exoplanets
+
+Overview
+
+Problem Statement:
+Our research aimed to determine if there is a discernible relationship between the location of stars on the Hertzsprung-Russell (HR) diagram and the presence of exoplanets, as well as the number of exoplanets they may possess. We utilized data from the NASA Exoplanet Archive (TESS Satellite) and the Gaia Archive (Data Release 2), encompassing a total of 34,250 projected exoplanets.
+
+Solution
+To explore this relationship, we undertook the following steps:
+
+Data Collection:
+
+We sourced data from the NASA Exoplanet Archive and the Gaia Archive.
+Using the Gaia Archive search tool, we combined the star and exoplanet data, resulting in a dataset of 1651 stars with exoplanets.
+Data Processing:
+
+We counted the number of times each host star appeared using a dictionary data structure.
+We merged the two datasets, ensuring correct formatting and filtering out unnecessary columns.
+Data Visualization:
+
+We created HR diagrams using key parameters such as color (B band - R band) and absolute magnitude. We initially created an HR diagram with all our stars.
+Subsequently, we divided the data into several number brackets to examine different patterns.
+Results:
+
+Our analysis revealed that there are no white dwarfs with exoplanets, likely due to post-supernova conditions.
+For large and bright blue stars, measurement challenges and strong gravitational forces may explain the absence of detected exoplanets.
+
+Skills Developed
+Python Programming: Using libraries such as Matplotlib, Pandas, and Numpy for data analysis and visualization.
+Data Merging: Combining datasets from different sources and resolving naming differences.
+Astrophysics Concepts: Understanding and applying concepts related to HR diagrams and stellar magnitudes.
+Data Analysis: Analyzing and interpreting large datasets to draw meaningful conclusions.
+
+Next Steps
+To further our research, we plan to:
+
+Investigate Outliers: Examine individual outlier stars to understand any unique characteristics or anomalies.
+Statistical Analysis: Conduct a detailed statistical analysis on the properties of the stars beyond visual inspection of the HR diagram.
+Update Data: Use the latest data releases to ensure our findings are based on the most current information available.
+Consult Experts: Collaborate with physics and astronomy experts to refine our analysis and conclusions.

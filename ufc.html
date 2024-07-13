@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFC Statistical Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="bg-light py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Home</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="data-science.html">Data Science Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="computer-science.html">Computer Science Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main id ='mainProjects'>
+        <h1>
+            UFC Statistical Analysis
+        </h1><br>
+        <section id = "hrSection">
+            <img id = "NFLImg" src="image/ufc.png"/>
+        </section>
+        <section id = 'projectLinks'>
+            <a href="misc/Math 239 Final Paper UFC Data.pdf">Download Paper</a>            
+        </section>
+        <section id="overview">
+            <h2>Project Overview</h2>
+            <p id = 'indent'>
+                In our research, we set out to predict the outcomes of UFC fights using comprehensive fighter statistics from 1993 to 2021, 
+                encompassing 6012 observations and 155 variables per fight. 
+                Our primary objective was to determine which fighter variables could effectively predict fight outcomes. 
+                To achieve this, we divided our dataset into infight and career data subsets. Utilizing binomial logistic regression 
+                for infight predictions, we analyzed variables like differences in height, weight, age, strike percentage, headshot percentage, 
+                and body shot percentage between fighters. Although the difference in strike percentage proved significant, the model's error rate 
+                of 0.316 highlighted its limited predictive power. For career predictions, we employed linear regression to explore the 
+                relationship between win ratios and various explanatory variables, including strikes, headshots, body shots, weight, height, 
+                reach, and age. Despite significant p-values, the models exhibited low R-squared values, indicating weak predictive relationships. 
+                Multiple linear regression, incorporating categorical variables such as weight class and stance, marginally improved the model's 
+                adjusted R-squared to 0.097. Through this project, we developed skills in classification analysis, logistic and linear regression, 
+                and statistical modeling, laying the groundwork for future studies that will refine predictive accuracy by analyzing weight class
+                and gender separately, incorporating more complex variables, and employing advanced modeling techniques.
+            </p>
+        </section>
+        <section id="analysis">
+            <h2>Problem Statement:</h2>
+            <p id = 'indent'>
+                In our research, we aimed to predict the outcomes of UFC fights based on fighter statistics.
+                The dataset we chose includes UFC fights and fighter statistics from 1993 to 2021. 
+                Each observation in the dataset represents a fight, including individual fighter stats, 
+                totaling 6012 observations with 155 variables. 
+                Our primary scientific question was: "Which fighter variables predict wins?" To answer this, 
+                we split our dataset into two subsets: infight data and career data.
+            </p>
+        </section>
+
+        <section id="visualization">
+            <h2>Solution:</h2>
+            <p id = 'indent'>
+                We conducted classification analysis and linear regression to draw conclusions from our data. 
+                For infight predictions, we used binomial logistic regression with explanatory variables such as differences in height, 
+                weight, age, strike percentage, headshot percentage, and body shot percentage between fighters. 
+                We found that the difference in strike percentage was significant at an alpha level of 0.05, 
+                with an AIC of 15904. However, the model's error rate was 0.316, indicating poor predictive power.
+            </p>
+            <p id = 'indent'>
+                For the career dataset, we used linear regression to find relationships between win ratio 
+                (number of wins over number of fights) and explanatory variables like proportion of strikes, 
+                headshots, body shots, weight, height, reach, and age. The linear regressions had significant p-values, 
+                but the R-squared values were low (0.0025-0.047), indicating weak relationships. Multiple linear regression, 
+                including categorical variables like weight class and stance, improved the adjusted R-squared to 0.097, 
+                but this was still not sufficient for strong predictions.
+            </p>     
+        </section>
+
+        <section id="skills">
+            <h2>Skills Learned:</h2>
+            <div id = 'indent'>
+                <ul>
+                    <li>Classification Analysis</li>
+                    <li>Logistic Regression</li>
+                    <li>Linear Regression</li>
+                    <li>Multiple Linear Regression</li>
+                    <li>Data Analysis</li>
+                    <li>Statistical Modeling</li>
+                </ul>
+            </div> 
+        </section>
+        <section id="nextSteps">
+            <h2>Next Steps:</h2>
+            <h3 id = 'indent'>Future plans include:</h3>
+            <div id = 'indent'>
+                <ul>
+                    <li>Separate analysis by weight class and gender to see if predictive factors differ</li>
+                    <li>Incorporate more complex variables, such as the significance of title fights</li>
+                    <li>Collaborate with someone knowledgeable about UFC to better understand the dataset and variables</li>
+                    <li>Explore more sophisticated modeling techniques to improve predictive power</li>
+                </ul>
+            </div>
+        </section>
+        <section id="nextSteps">
+            <h2>Collaborators:</h2>
+            <div id = 'indent'>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/will-reeves-199820223/">Will Reeves</a></li>
+                </ul>
+            </div> 
+        </section>
+    </main>
+    <footer>
+        <div class="head_banner">
+            <div class="banner__content">
+                <div class="banner__text">
+                    Hi there, thanks for visiting my website! I'd love to <a href="https://www.linkedin.com/in/camdin-dirnberger-a6a58a1a5" target="_blank">connect</a> with you.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

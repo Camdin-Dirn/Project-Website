@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>March Madness Pool</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="bg-light py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Home</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="data-science.html">Data Science Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="computer-science.html">Computer Science Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main id = 'mainProjects'>
+        <h1>
+            March Madness Pool
+        </h1><br>
+        <section id = "hrSection">
+            <img id = "bracketBuddiesImg" src="image/BracketBuddies.png"/>
+        </section>
+        <section id = 'projectLinks'>
+            <a href="https://march-e499a.firebaseapp.com/">Link To Site</a>            
+        </section>
+        <section id="overview">
+            <h2>Project Overview</h2>
+            <p id = 'indent'>
+                As the organizer of a March Madness bracket pool for the past eight years, 
+                I found it challenging to manage and update scores using a Google Sheet, 
+                which was also inconvenient for participants to track their scores. To streamline this process, 
+                I developed BracketBuddies, a live website using SQL and HTML, making score updates easier for me and score viewing more 
+                accessible for competitors.
+            </p>
+        </section>
+        <section id="analysis">
+            <h2>Problem Statement:</h2>
+            <p id = 'indent'>
+                Managing and updating scores for a March Madness bracket pool using a Google Sheet has been cumbersome for both the organizer 
+                and participants. The need for a more efficient and user-friendly solution led to the creation of BracketBuddies, 
+                a platform designed to simplify score tracking and updates.
+            </p>
+        </section>
+
+        <section id="visualization">
+            <h2>Solution:</h2>
+            <p id = 'indent'>
+                BracketBuddies is hosted on Google Firebase and connected to a PostgreSQL database, enabling live updates and ease of use. 
+                This setup allows for real-time score updates and provides participants with a seamless experience when viewing their scores
+            </p>  
+        </section>
+
+        <section id="skills">
+            <h2>Skills Learned:</h2>
+            <div id = 'indent'>
+                <ul>
+                    <li>Firebase: Hosting and managing the website</li>
+                    <li>PostgreSQL: Database management and real-time data updates</li>
+                    <li>HTML: Building the user interface for the platform</li>
+                </ul>
+            </div> 
+        </section>
+        <section id="nextSteps">
+            <h2>Next Steps:</h2>
+            <h3 id = 'indent'>Future plans include:</h3>
+            <div id = 'indent'>
+                <ul>
+                    <li>Integrate Historical Stats: Incorporate historical data from the past eight years to provide deeper insights</li>
+                    <li>Website Design: Enhance the website’s design for a more polished and professional appearance</li>
+                    <li>User Accounts: Implement sign-up and login functionality for personalized user experiences</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="head_banner">
+            <div class="banner__content">
+                <div class="banner__text">
+                    Hi there, thanks for visiting my website! I'd love to <a href="https://www.linkedin.com/in/camdin-dirnberger-a6a58a1a5" target="_blank">connect</a> with you.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
